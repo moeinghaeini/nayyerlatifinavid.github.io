@@ -1,138 +1,218 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Nayyer Latifinavid</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-        }
-        h1, h2 {
-            color: #222;
-            margin-bottom: 15px;
-        }
-        h1 {
-            font-size: 26px;
-        }
-        h2 {
-            font-size: 20px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contact {
-            margin-bottom: 20px;
-            font-size: 14px;
-        }
-        .contact a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        a {
-            word-wrap: break-word;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Nayyer Latifinavid</title>
+  <style>
+    body {
+      margin: 1rem auto;
+      max-width: 900px;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    ul li {
+      margin-bottom: 1rem;
+    }
+    .contact-info {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .contact-info a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      color: #0073e6;
+    }
+    .section {
+      margin-bottom: 1.5rem;
+    }
+    .section p, .section li {
+      margin: 0.4rem 0;
+    }
+    .section ul li {
+      margin-bottom: 0.6rem;
+    }
+    .skills-columns {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .skills-columns li {
+      width: 100%;
+    }
+    @media (min-width: 600px) {
+      .skills-columns li {
+        width: 50%;
+      }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Nayyer Latifinavid</h1>
-            <div class="contact">
-                <p>Email: <a href="mailto:nayyer.latifinavid@studenti.unimi.it">nayyer.latifinavid@studenti.unimi.it</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/nayyer-latifinavid-218327265" target="_blank" rel="noopener noreferrer">linkedin.com/in/nayyer-latifinavid-218327265</a></p>
-                <p>Mobile: (+39) 3500079008</p>
-            </div>
-        </header>
 
-        <main>
-            <section>
-                <h2>Education</h2>
-                <ul>
-                    <li><strong>Milan University</strong> (Milan, Italy) — <em>M.Sc. in Medical Biotechnology and Molecular Medicine (GPA: 3.5)</em>, 2021 - 2024</li>
-                    <li><strong>Islamic Azad University</strong> (Ardabil, Iran) — <em>B.Sc. in Laboratory Science (GPA: 4.0)</em>, 2013 - 2017</li>
-                </ul>
-            </section>
+  <!-- Name and Contact Info -->
+  <h1>Nayyer Latifinavid</h1>
+  <div class="contact-info">
+    <a href="mailto:nayyer.latifinavid@studenti.unimi.it">nayyer.latifinavid@studenti.unimi.it</a> |
+    <a href="tel:+39-350-007-9008">(+39) 350 007 9008</a> |
+    <a href="https://linkedin.com/in/nayyerlatifinavid">linkedin.com/nayyerlatifinavid</a> |
+    Resided in Milan
+  </div>
 
-            <section>
-                <h2>Skills</h2>
-                <ul>
-                    <li>Molecular Biology: PCR, NGS, CRISPR-Cas9, SDS-PAGE, Western Blot, MTT assays</li>
-                    <li>Clinical Hematology: CBC, blood smear analysis, coagulation testing (PT, aPTT, INR)</li>
-                    <li>Immunology: ELISA, immunohistochemistry, serological assays</li>
-                    <li>Microbiology: Microbial culture, identification, antibiograms</li>
-                    <li>Bioinformatics: High-throughput sequencing analysis, R programming (Seurat), WGS</li>
-                    <li>Digital Proficiency: Microsoft Office (Word, Excel, PowerPoint)</li>
-                </ul>
-            </section>
+  <!-- Education -->
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li>
+        <strong>University of Milan - La Statale</strong>, Milan, Italy<br />
+        <em>M.Sc. in Medical Biotechnology and Molecular Medicine (2021 -- 2024)</em><br />
+        Thesis: GENOTYPING POLYCLONAL PLASMACELLS IN MULTIPLE MYELOMA BY SINGLE CELL ANALYSIS<br />
+        GPA: 3.50/4.00
+      </li>
+      <li>
+        <strong>Islamic Azad University, Ardabil Branch</strong>, Ardabil, Iran<br />
+        <em>B.Sc. in Laboratory Science (2013 -- 2017)</em><br />
+        Thesis: Genotyping Multiple Myeloma single cell RNA-seq<br />
+        GPA: 4.00/4.00
+      </li>
+    </ul>
+  </div>
 
-            <section>
-                <h2>Experience</h2>
-                <ul>
-                    <li>
-                        <strong>Hematology Lab, Policlinico di Milano</strong> (Milan, Italy) — <em>Intern</em>, 2023 - 2024
-                        <ul>
-                            <li>Performed single-cell RNA sequencing using NGS and analyzed data with the R Seurat package.</li>
-                            <li>Co-authored papers on plasma cell dyscrasias and hematologic malignancies.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong>Fatemi Hospital</strong> (Ardabil, Iran) — <em>Clinical Laboratory Technician</em>, 2016 - 2021
-                        <ul>
-                            <li>Worked in biochemistry, hematology, and microbiology labs using various autoanalyzers.</li>
-                            <li>Conducted quality control, calibration, and maintenance of laboratory instruments.</li>
-                            <li>Co-invented cancer-biogram kits for predicting optimal chemotherapy dosages.</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+  <!-- Research Interests -->
+  <div class="section">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Omics Technologies and Bioinformatics, Cancer Research and Personalized Medicine, Hematological Malignancies</li>
+    </ul>
+  </div>
 
-            <section>
-                <h2>Publications</h2>
-                <ul>
-                    <li><strong>Genotypic Identification of Polyclonal Plasma Cells</strong> (2024) — DOI: <a href="https://doi.org/10.1101/2024.05.26.595470" target="_blank" rel="noopener noreferrer">10.1101/2024.05.26.595470</a></li>
-                    <li><strong>Study of Hematology Malignancy Vaccines</strong> (2016) — Conference Paper (MPHBS01_154)</li>
-                </ul>
-            </section>
+  <!-- Work Experience -->
+  <div class="section">
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>Policlinico di Milano</strong>, Milan, Italy<br />
+        Internship - Hematology Lab (2023 -- 2024)<br />
+        <em>Performed RNA sequencing and data analysis using bioinformatics tools such as R.</em>
+      </li>
+      <li>
+        <strong>Fatemi Hospital</strong>, Ardabil, Iran<br />
+        Clinical Laboratory Technician (2016 -- 2021)<br />
+        <em>Conducted diagnostic tests in Biochemistry, Hematology, and Microbiology labs.</em>
+      </li>
+    </ul>
+  </div>
 
-            <section>
-                <h2>Honors and Awards</h2>
-                <ul>
-                    <li>Awarded by the Minister of Health for COVID-19 laboratory contributions (2020)</li>
-                    <li>Received appreciation from the Deputy Minister of Health for pandemic work (2020)</li>
-                </ul>
-            </section>
+  <!-- Skills -->
+  <div class="section">
+    <h2>Skills</h2>
+    <ul class="skills-columns">
+      <li><strong>Soft Skills:</strong> Teamwork, Critical Thinking, Problem-Solving, Adaptability, Teaching</li>
+      <li><strong>Programming Languages:</strong> Python, R</li>
+      <li><strong>Molecular Biology:</strong> MTT, Western Blot, SDS-PAGE, PCR, Next Generation Sequencing, Single-cell RNA sequencing, CRISPR-Cas9</li>
+      <li><strong>Bioinformatics:</strong> Sequencing Analysis, R Programming</li>
+      <li><strong>Digital Proficiency:</strong> Microsoft Office, LaTeX</li>
+      <li><strong>Clinical Hematology:</strong> CBC, Blood smear analysis, Coagulation testing (PT, aPTT, INR)</li>
+      <li><strong>Immunology:</strong> ELISA, Immunohistochemistry, Serological assays</li>
+      <li><strong>Microbiology:</strong> Microbial culture, Identification, Antibiograms</li>
+      <li><strong>Biochemistry:</strong> Enzyme activity measurement, Protein quantification</li>
+    </ul>
+  </div>
 
-            <section>
-                <h2>Patent</h2>
-                <ul>
-                    <li><strong>Diagnostic Tool for Oncology</strong> — Patent Number: 18923</li>
-                </ul>
-            </section>
-        </main>
-    </div>
+  <!-- Publications -->
+  <div class="section">
+    <h2>Publications</h2>
+    <ul>
+      <li>
+        Mateo Claudio Da Vìa, Francesca Lazzaroni, et al. 
+        <em>Genotypic Identification of Polyclonal Plasma Cells in Plasma Cell Dyscrasias Shows an Aberrant Single-Cell Phenotype with Clinical Implications.</em> 
+        <em>bioRxiv</em>, 2024. DOI: 
+        <a href="https://doi.org/10.1101/2024.05.26.595470" target="_blank">
+          10.1101/2024.05.26.595470
+        </a>.
+      </li>
+      <li>
+        A. Alimohammadin, N. Latifinavid, V. Shojai. 
+        <em>Study of Hematology Malignancy Vaccines.</em> 
+        Presented at the <em>Medicine, Public Health, and Biological Science Conference</em>, 2016. 
+        National Code: MPHBS01_154.
+      </li>
+    </ul>
+  </div>
+
+  <!-- Certificates and Patents -->
+  <div class="section">
+    <h2>Certificates and Patents</h2>
+    <ul>
+      <li><strong>NGS Data Analysis | Whole Genome Sequencing (WGS)</strong>, Dandelion Academia (2025)</li>
+      <li><strong>Genome Editing Technology with CRISPR-Cas9</strong>, Dandelion Academia (2025)</li>
+      <li><strong>TESOL Certificate</strong>, ITTI (2018)</li>
+      <li><strong>ICDL Certificate</strong>, Fadak Digital Media Technical Department (2015)</li>
+      <li><strong>Diagnostic Tool for Oncology</strong>, Patent Number: 18923 (2014 -- 2018)</li>
+    </ul>
+  </div>
+
+  <!-- Languages -->
+  <div class="section">
+    <h2>Languages</h2>
+    <ul>
+      <li>Persian (Native), English (Advanced), Turkish (Advanced), Italian (Intermediate)</li>
+    </ul>
+  </div>
+
+  <!-- Awards and Honors -->
+  <div class="section">
+    <h2>Awards and Honors</h2>
+    <ul>
+      <li><strong>Appreciation for High Performance and Responsibility</strong>, Deputy Minister of Health (2020)</li>
+      <li><strong>Award for Dedication during COVID-19 Pandemic</strong>, Minister of Health (2020)</li>
+    </ul>
+  </div>
+
+  <!-- Voluntary Work -->
+  <div class="section">
+    <h2>Voluntary Work</h2>
+    <ul>
+      <li>
+        <strong>COVID-19 Laboratory Volunteer</strong>, Provincial Health Center (2019)<br />
+        <em>Supported healthcare staff in conducting diagnostic tests and ensured lab safety protocols.</em>
+      </li>
+      <li>
+        <strong>Blood Donation Campaign Organizer</strong>, Local Health Organization (2017)<br />
+        <em>Organized blood donation drives, encouraging community participation and ensuring smooth operations.</em>
+      </li>
+    </ul>
+  </div>
+
+  <!-- References -->
+  <div class="section">
+    <h2>References</h2>
+    <ul>
+      <li>
+        Prof. Niccolò Bolli, University of Milan<br />
+        <a href="mailto:niccolo.bolli@unimi.it">niccolo.bolli@unimi.it</a>
+      </li>
+      <li>
+        Prof. Saeed Latifi Navid, Mohaghegh University<br />
+        <a href="mailto:s_latifi@uma.ac.ir">s_latifi@uma.ac.ir</a>
+      </li>
+      <li>
+        Dr. Francesca Lazzeroni, Policlinico di Milano<br />
+        <a href="mailto:francy.la84@hotmail.it">francy.la84@hotmail.it</a>
+      </li>
+    </ul>
+  </div>
+
 </body>
 </html>
